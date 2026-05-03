@@ -5,6 +5,14 @@ from tkinter import *
 from tkinter import messagebox
 import random
 
+"""
+AVISO IMPORTANTE: Quando selecionar uma quantidade de alunos na segunda tela (ex: 100 alunos), confirme para ver o resultado,
+e em seguida, se quiser testar uma outra quantidade (1000 ou 10), volte para a Janela Principal, e refaça o processo. Se não fizer isso, o código vai dar um
+erro chamado "Traceback: self.quantidade_alunos don't have a method called "get()"."
+
+Até o momento, é o único bug existente.
+"""
+
 class JanelaQuantidadeAlunos(Toplevel):
     def __init__(self, master=None):
         super().__init__(master)
